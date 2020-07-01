@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="main.css" rel="stylesheet" text="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <title>Marvel:Superhero Trivia</title>
+  </head>
+  <body>
+    <main role="main" class="container">
+      <header role="banner" class="header">
+        <section>
+          <a href="index.html">
+            <img src="images/Marvel.png" class="marvelImg" alt="Superheros pic"/>
+          </a>
+        </section>
+        <section>
+           <!----left side on the page total number of pages desplay and total score-->
+          <ul>
+            <li class="quizMe">Question: <span class="questionNumber">0</span>/5</li>
+            <li class="quizMe">Score: <span class="score">0</span>
+            </li>
+          </ul>
+        </section>
+      </header>
+      <!----to start game click on start button-->
+      <section role="region" class="galaxyBox">
+        <section class="startQuiz box">
+          <h1>How much do you know about Superheros?</h1>
+          <img src="images/Captain-America.jpg" alt="Iron Man and Captain America fights" class="images">
+          <button type="button" class="startButton button">Start</button>
+        </section>
+        <!----after clicking start button 5 questions will pop up with options-->
+        <section class="questionBox box altBox">
+        </section>
+        <!-----in the final container total score will display-->
+        <section class="response box altBox"></section>
+        <section class="final box altBox"></section>
+
+      </section>
+    </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+  </body>
+</html>

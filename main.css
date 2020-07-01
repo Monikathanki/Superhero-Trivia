@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  border-radius:  1%;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  background-image: url(images/background-pic.jpg);
+  background-color: black;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  
+}
+
+.header {
+  text-align: center;
+}
+.marvelImg {
+  width: 45%;
+}
+
+.header li {
+  display: inline-block;
+  margin: 1em;
+  list-style: none;
+  font: 10em;
+  background-color: #0f0a06;
+}
+
+.galaxyBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+  border: 0.1em #46230e solid;
+  background-image: url(images/galaxy-pic.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+}
+.startQuiz, 
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+  padding: 2em;
+  border: 0.1em #46230e solid;
+  background-color: black;
+}
+
+.images {
+  margin-bottom: 0.5em;
+  width: 60%;
+  max-width: 240px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.6em;
+  padding: 0.6em;
+  cursor: pointer;
+}
+h1, h3, legend {
+  margin-bottom: 0.5em;
+}
+.answerOption {
+  margin-top: 0.5em;
+}
+
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  height: 3em;
+  cursor: pointer;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  border: 0.1em white solid;
+  background-color: #060a08;
+  color: #ffffff;
+}
+
+.button:hover, .button:active {
+  background-color: white;
+  color: black;
+  border: 0.1em #371d0d solid;
+  }
+
+.final {
+  display: block;
+}
+
+fieldset {
+  border: none;
+  display: inline-block;
+}
+.redio {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-widht: 320px) {
+  .marvelImg {
+    width:45%;
+  }
+  .galaxyBox {
+    width: 90%;
+    height: 31em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top:0.8em;
+    padding-bottom:0.8em;
+    
+    
+  }
+
+  .box {
+    width: 90%;
+    height: 90%;
+  }
+
+  .images {
+    width: 85%;
+  }
+
+  .button {
+    margin-top: 0.5em;
+    font-size: 1em;
+    width: 8em;
+    height: 2.5em;
+  }
+
+  h1,
+  h3,
+  legend {
+    font-size: 1em;
+  }
+  .header li {
+    font-size: 1em;
+  }
+
+  .quizMe {
+    font-size: 0.9em;
+    margin: 0.1em;
+  }
+
+
+    
+}
+
+
+@media only  screen and (min-width: 550px) {
+  .galaxyBox {
+    width: 29.5em;
+    height: 31.5em;
+    padding-bottom:2.6em;
+    padding-top:  2.6em;
+  }
+
+  .box {
+    width: 85%;
+    height: 98%;
+  }
+
+  .button {
+    margin-top: 1.2em;
+    font-size: 1em;
+    width: 4em;
+    height: 2.5em;
+  }
+
+  h1,
+  h3,
+  legend {
+    font-size: 1em;
+  }
+  .quizMe {
+    font-size: 1.2em;
+  }
+
+
+
+}
+
+@media only screen and(min-width: 800px) {
+  .header li {
+    margin: 1em;
+    font-size: 1.5em;
+  }
+
+  .galaxyBox {
+    width: 35em;
+    height: 38em;
+  }
+  .box {
+    width: 85%;
+    height: 95%;
+  }
+
+  h1,
+  h3,
+  legend {
+    font-size: 1.5em;
+  }
+
+  .quizMe {
+    font-size: 1.2em;
+  }
+
+  .button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 12em;
+    font-size: 1.2em;
+  }
+}
